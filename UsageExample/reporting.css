@@ -1,0 +1,275 @@
+﻿@import url('http://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+html, body, html * {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+h1 {
+    font-size: 54px;
+    font-weight: 300;
+}
+h2 {
+    font-size: 24px;
+    font-weight: 300;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 300;
+}
+h4 {
+    font-size: 13px;
+    font-weight: 10;
+}
+
+h1.testsuite-title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header {
+    width:100%;
+    margin-bottom: 2%;
+}
+
+.testsuite-card.mdc-card {
+    width: 94%;
+    margin: auto
+}
+.invisible {
+    display: none;
+}
+
+.mdc-card {
+    padding: 0.75%;
+    margin: 0;
+    margin-bottom: 10px;
+    display: flex;
+    font-weight: 400;
+    overflow: hidden;
+    width: 332px;
+    position: relative;
+}
+
+.white-card {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    font-weight: 400;
+    margin-bottom: 0.25%;
+    border: none; 
+    flex-flow: row wrap;
+    align-items:flex-start;
+    padding:0
+}
+
+.testdefintion-card .mdc-card__title
+{
+    text-align: center;
+}
+
+.info-card.mdc-card {
+    margin-left: 0.75%;
+    margin-right: 0.75%;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.testcase-card.mdc-card {
+    width: 100%;
+}
+
+.testcase-card.mdc-card:last-child {
+    width: 100%;
+}
+
+.testcase-card .mdc-card__supporting-text {
+    width: auto;
+}
+
+.testcase-title {
+    margin-bottom: 0;
+}
+
+.testcase-title a {
+    color: black;
+    text-decoration: none;
+}
+
+.testcase-title a:hover {
+    color: dimgrey;
+    text-decoration: none;
+}
+
+.suite-grid.mdc-grid {
+    overflow: hidden;
+    margin: 0;
+    padding: 0 0 1%
+}
+
+.keyvalue-table tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+.keyvalue-table tr:nth-child(even) {
+    background-color: #fff;
+}
+
+.keyvalue-table td{
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.testcase-table {
+    max-width: 100%;
+    table-layout:fixed;
+    border-spacing: 2px;
+    border: 2;
+    text-align: center;
+    white-space: nowrap !important;
+}
+
+.testcase-table td {
+    padding: 0 8px;
+    background-color: #eee;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+.testcase-table th {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    background-color: #9fa4d4;
+}
+
+#teststep {
+    background-color: #dbda7be0;
+}
+
+#teststep-name {
+    background-color: #dbda7be0;
+    text-align: left;
+}
+
+th {
+    font-weight: 700;
+    background-color: #9fa4d4;
+}
+
+.testcase-toggles {
+    margin-left: 16px;
+}
+
+.testsuite-toggles{
+    margin-left: 5%;
+}
+
+.testcase-table td.Pass {
+    background-color: lightgreen;
+}
+
+.testcase-table td.Fail {
+    background-color: lightcoral;
+}
+
+.testcase-table td.Inconclusive {
+    background-color: rgb(255, 203, 107)
+}
+.filterText {display:inline-block}
+
+td.Error {
+    background-color: violet;
+}
+
+.testcase-table td.Comment {
+    background-color: lightgrey;
+}
+
+.testcase-table td.Notset {
+    background-color: white;
+}
+
+.testcase-table a {
+    color: black;
+}
+
+.testcase-table a:hover {
+    color: gray;
+}
+
+.testlog-table tr:nth-child(even) {
+    background-color: #dfdfdf;
+}
+
+.testlog-table tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+.testlog-table td {
+    padding: 0 8px
+}
+
+.verdict-table {
+    border: 0;
+    margin-right: 2.5%;
+    padding: 4px 7px 2px 4px;
+    background-color: #eee
+}
+
+.verdict-table td {
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 1px 5px
+}
+
+.verdict-table td:nth-child(1) {
+    text-align: left;
+}
+
+.verdict-table th:not(:nth-child(1)) {
+    background-color: lightgray;
+    padding: 2px 5px
+}
+
+.verdict-table tr:nth-child(2) {
+    background-color: lightyellow;
+}
+
+.step-verdict-table {
+    border: 0
+}
+
+.step-verdict-table tr:nth-child(2) {
+    background-color: #eee;
+}
+
+.step-verdict-table td {
+    border-top: 0px;
+}
+
+.verdict-table th.pass, td.pass {
+    background-color: lightgreen;
+}
+
+.verdict-table th.fail, td.fail {
+    background-color: lightcoral;
+}
+
+.verdict-table th.error, td.error {
+    background-color: violet;
+}
+
+.verdict-table th.inconclusive, td.inconclusive {
+    background-color: rgb(255, 203, 107)
+}
+
+.testlog-checkbox.mdc-checkbox {
+    margin-top: 15px;
+}
